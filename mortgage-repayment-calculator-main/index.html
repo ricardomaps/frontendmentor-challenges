@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  </head>
+  <body>
+    <main class="container">
+      <section class="left">
+        <div class="header">
+          <h1>Mortgage Calculator</h1>
+          <button class="clear-btn">Clear All</button>
+        </div>
+        <form>
+          <div class="form-top-input">
+            <div>
+              <label for="amount">Mortgage Amount</label>
+              <input class="form-input" required type="number" id="amount"></input>
+              <p class="error-phrase hidden"> This field is required </p>
+            </div>
+          </div>
+
+          <div class="form-mid-input">
+            <div>
+              <label for="term">Mortgage Term</label>
+              <input class="form-input" required type="number" id="term"></input>
+              <p class="error-phrase hidden"> This field is required </p>
+            </div>
+            <div>
+              <label for="rate">Interest Rate</label>
+              <input class="form-input" required type="number" id="term"></input>
+              <p class="error-phrase hidden"> This field is required </p>
+            </div>
+          </div>
+          <div class="radio-inputs">
+            <label>Mortgage Type</label>
+            <div class="form-input">
+              <input checked type="radio" name="mortgage-type" value="repayment">Repayment</input>
+            </div>
+            <div class="form-input">
+              <input type="radio" name="mortgage-type" value="interest-only">Interest Only</input>
+            </div>
+          </div>
+          <p class="error-phrase hidden"> This field is required </p>
+
+          <button class="calc-btn" type="submit">Calculate Repayments</button>
+        </form>
+      </section>
+      <section class="right">
+        <h1>Results shown here</h1>
+
+        <p class="light-text">Complete the form and click “calculate repayments” to see what
+          your monthly repayments would be.</p>
+        <div class="empty-result">
+          <h2>Your results</h2>
+
+          <p class="light-text">Your results are shown below based on the information you provided. 
+            To adjust the results, edit the form and click “calculate repayments” again.</p>
+        </div>
+
+        <div class="full-results">
+          <p class="light-text">Your monthly repayments</p>
+
+          <p class="light-text">Total you'll repay over the term</p>
+        </div>
+      </section>
+    </main>
+</body>
+</html>

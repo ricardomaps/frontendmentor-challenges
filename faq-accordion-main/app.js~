@@ -1,0 +1,28 @@
+class Accordion {
+    constructor(tiles){
+	this.tiles = tiles;
+	this.activeTile = null;
+	for (const tile of tiles){
+	    tile.addEventListener("click", (ev) => this.setActive(ev))
+	}
+    }
+
+    setActive(event){
+	if (this.activeTile){
+	    this.activeTile.classList.toggle("active");
+	    this.activeTile.nextElementSibling.style.height = "0%";
+	    if (this.activeTile == event.target){
+		this.activeTile = null;
+		return;
+	    }
+	}
+	this.activeTile = event.target;
+	this.activeTile.classList.toggle("active");
+	const panel = this.activeTile.nextElementSibling;
+	panel.style.height = panel.scrollHeight + "px";
+    }
+}
+
+
+const tiles = document.getElementsByClassName("tile");
+const Acc = new Accordion(tiles);

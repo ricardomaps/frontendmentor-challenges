@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root{
+    --moderate-violet: 263, 55%, 52%;
+    --very-dark-grayish-blue: 217, 19%, 35%;
+    --very-dark-blackish-blue: 219, 29%, 14%;
+    --white: 0, 0%, 100%;
+    --light-gray: 0, 0%, 81%;
+    --light-grayish-blue: 210, 46%, 95%;
+}
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    margin: 0;
+    display: flex;
+    place-content: center;
+    background-color: hsl(var(--light-grayish-blue));
+}
+
+.testimonials-layout{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+}
+
+.testimonial__slot-1{
+    grid-row: 1 / 2;
+    grid-column: 1/ 3;
+}
+
+.testimonial__slot-2{
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+
+.testimonial__slot-3{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.testimonial__slot-4{
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+}
+
+.testimonial__slot-5{
+    grid-row: 1 / 3;
+    grid-column: 5 / 5;
+}
+
+.violet-colorscheme{
+    --background: var(--moderate-violet);
+    --text-color: var(--white);
+}
+
+.testimonials{
+    background-color: hsl(var(--background));
+    color: var(--text-color);
+}
+
+.author{
+}
+
+.vefified{
+    opacity: 50%;
+    color: hsl(var(--text-color), 50%);
+}
+
+.review{
+    opacity: 70%;
+    color: hsl(var(--text-color), 70%);
+}

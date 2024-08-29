@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+input, label{
+	display: block;
+}
+
+input {
+	background-color: var(--very-light-grayish-cyan);
+	border: none;
+	padding: 5px 5px;
+	border-radius: 4px;
+	color: var(--very-dark-cyan);
+	font-weight: bolder;
+	font-size: 24px;
+	text-align: right;
+	width: 100%;
+}
+
+input:focus{
+	outline: solid 3px var(--strong-cyan);
+}
+
+body {
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-grayish-cyan);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.calculator__container {
+	background-color: white;
+	padding: 2rem;
+	border-radius: 1rem;
+	display: flex;
+	gap: 2rem;
+}
+
+.calculator__input {
+	width: 400px;
+}
+
+.calculator__display{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: var(--very-dark-cyan);
+	color: white;
+	width: 400px;
+	border-radius: 12px;
+	padding: 2rem 2rem;
+}
+
+.faded{
+	color: var(--grayish-cyan);
+}
+
+.input-label {
+	color: var(--very-dark-cyan);
+}
+
+.tip-selector {
+	display: grid;
+	grid-template-rows: repeat(2, 40px);
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 15px;
+}
+
+.tip {
+	background-color: var(--very-dark-cyan);
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	font-size: 24px;
+	text-align: center;
+}
+
+.tip:hover{
+	filter: brightness(125%);
+}
+
+.active-tip {
+	background-color: var(--strong-cyan);
+	color: var(--very-dark-cyan);
+}
+
+.reset-btn {
+	cursor: pointer;
+	outline: none;
+	border: none;
+	width: 100%;
+	background-color: var(--strong-cyan);
+	color: var(--very-dark-cyan);
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.display-label {
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	p {
+		margin: 0;
+	}
+}
+
+.result {
+	font-size: 32px;
+	font-weight: bolder;
+	color: var(--strong-cyan);
+	
+}

@@ -1,0 +1,28 @@
+.positioning{
+    width: 25vw;
+    height: 50vh;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.todos-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.todos-head h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+}
+
+.add-todos{
+
+}
+
+.todo-list{
+    border-radius: 0.5rem;
+}

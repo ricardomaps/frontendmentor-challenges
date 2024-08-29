@@ -1,0 +1,56 @@
+.modal-background{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 50%;
+}
+
+.modal{
+    z-index: 10;
+    opacity: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 20vw;
+    backdrop-filter: brightness(60%);
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.modal h3{
+    margin: 0;
+    color: var(--dark-blue);
+}
+
+.modal p{
+    color: var(--grayish-blue);
+}
+
+.modal button{
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: inherit;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal .btn-cancel{
+   background-color: var(--grayish-blue);
+}
+
+.modal .btn-delete{
+    background-color: var(--soft-red);
+}

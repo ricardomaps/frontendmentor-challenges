@@ -1,0 +1,43 @@
+:root {
+	--lime: hsl(61, 70%, 52%);
+	--red: hsl(4, 69%, 50%);
+	--white: hsl(0, 0%, 100%);
+	--slate-100: hsl(202, 86%, 94%);
+	--slate-300: hsl(203, 41%, 72%);
+	--slate-500: hsl(200, 26%, 54%);
+	--slate-700: hsl(200, 24%, 40%);
+	--slate-900: hsl(202, 55%, 16%);
+}
+
+body {
+	margin: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	background-color: var(--slate-100);
+	display: grid;
+	place-items: center;
+}
+
+label {
+	display: block;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container {
+	background-color: var(--white);
+	padding: 3rem;
+	border-radius: 16px;
+}
+
+.form-input {
+
+
+}
+
+button.clear {
+	
+}

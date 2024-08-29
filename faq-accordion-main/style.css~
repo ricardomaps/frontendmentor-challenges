@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+
+body{
+    display: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Work Sans";
+    font-size: 16px;
+    background-color: var(--light-pink);
+}
+
+.header{
+    background-image: url(/assets/images/background-pattern-desktop.svg);
+    width: 100%;
+    height: 35%;
+}
+
+.accordion{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 30%;
+    padding: 3rem 2rem 0rem;
+    background-color: var(--white);
+    box-shadow: 0 0 5rem #ddd;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.accordion-header{
+    display: flex;
+    align-items: start;
+    font-weight: 700;
+    font-size: 3rem;
+    &:before{
+	content: "";
+	display: block;
+	background-image: url(/assets/images/icon-star.svg);
+	width: 40px;
+	height: 40px;
+	margin-right: 20px;
+	align-self: center;
+    }
+}
+
+.tile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    color: var(--dark-purple);
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 1.75rem 0rem;
+    cursor: pointer;
+    &:hover{
+	color: purple;
+    } 
+    &:after{
+	content: url(/assets/images/icon-plus.svg);
+	width: 20px;
+	height: 20px;
+	align-self: center;
+	float: right;
+    }
+}
+
+.active{
+    &:after{
+	content: url(/assets/images/icon-minus.svg);
+	width: 20px;
+	height: 20px;
+	float: right;
+    }
+}
+
+.separator + .separator{
+    border-top: 1px solid #eee;
+}
+
+.answer{
+    color: var(--grayish-purple);
+    text-align: left;
+    padding-bottom: 2rem;
+    overflow: hidden;
+    height: 0%;
+
+}
+
+

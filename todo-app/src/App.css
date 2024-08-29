@@ -1,0 +1,27 @@
+.header{
+  width: 100vw;
+  height: 250px;
+}
+
+.header-light-theme{
+  background-image: url(./assets/images/bg-desktop-light.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.header-dark-theme{
+  background-image: url(./assets/images/bg-desktop-dark.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.centering{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}

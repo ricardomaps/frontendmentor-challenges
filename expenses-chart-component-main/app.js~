@@ -1,0 +1,6 @@
+const weekSpending = fetch("data.json");
+let weekTotal = 0;
+for (const day of weekSpending){
+    weekTotal += day[]
+}
+const bars = document.getElementsByClassName("bar");

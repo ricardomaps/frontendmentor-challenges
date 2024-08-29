@@ -1,0 +1,27 @@
+<script>
+
+</script>
+<div class="header">  
+<ul class="navbar">
+<img alt="" src="/images/logo.svg"/>
+<li>Collections</li>
+<li>Men</li>
+<li>Women</li>
+<li>About</li>
+<li>Contact</li>
+</ul>
+
+<div class="profile-section">
+<img id="cart" src="/images/icon-cart.svg"/>
+<div class="user-cart" id="user-cart">
+<div class="user-cart__header">Cart</div>
+<div class="user-cart__items__wrapper" id= "cart-items">
+</div>
+</div>
+<img id="avatar" src="/images/image-avatar.png"/>
+</div>
+</div>
+
+<style>
+
+</style>
